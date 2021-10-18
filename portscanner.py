@@ -2,9 +2,10 @@ import socket
 import threading
 from queue import Queue
 
+# Version 1
 
-#IMPORTANT: DO NOT USE THIS SOFTWARE TO SCAN ANY NETWORKS YOU DO NOT OWN OR HAVE PERMISSION TO SCAN
-target = "192.168.72.1" #my local ip
+# IMPORTANT: DO NOT USE THIS SOFTWARE TO SCAN ANY NETWORKS YOU DO NOT OWN OR HAVE PERMISSION TO SCAN
+target = "192.168.72.1"
 
 queue = Queue()
 open_ports = []
