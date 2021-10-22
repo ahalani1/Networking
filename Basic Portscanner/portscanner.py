@@ -6,6 +6,12 @@ from queue import Queue
 
 # IMPORTANT: DO NOT USE THIS SOFTWARE TO SCAN ANY NETWORKS YOU DO NOT OWN OR HAVE PERMISSION TO SCAN
 target = "192.168.72.1"
+min_port = 1
+max_port = 1024
+
+if target == NULL:
+    print("Please enter target ip:")
+    print("Example: 142.251.32.78")
 
 queue = Queue()
 open_ports = []
@@ -36,7 +42,7 @@ def worker():
             open_ports.append(port)
 
 
-port_list = range(1,1024)
+port_list = range(min_port, max_port)
 fill_queue(port_list)
 
 thread_list = []
